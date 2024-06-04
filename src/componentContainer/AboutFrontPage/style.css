@@ -1,25 +1,35 @@
+.ocultar-scrollbar {
+    scrollbar-width: 0;
+    -ms-overflow-style: none;
+}
+
+.ocultar-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
 .about-frontPage-container {
     height: 100vh;
     min-height: 57rem;
     width: 100%;
     color: var(--main-color);
-    position: relative;
+    position: fixed;
     overflow: hidden;
+    z-index: 8;
 }
 
 .about-frontPage-container img {
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: -10%;
+    transition: 2s ease-in-out;
 }
 
 .about-frontPage-content {
-    width: 90%;
     height: 100%;
-    max-width: 1140px;
-    margin: auto;
+    margin: auto 80px;
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 .about-frontPage-title {
@@ -29,8 +39,10 @@
     line-height: 6rem;
     letter-spacing: -0.02em;
     text-align: left;
-    width: 60%;
     margin-bottom: 0;
+    position: absolute;
+    left: 0;
+    transition: 1s ease-in-out;
 }
 
 .about-frontPage-title span {
@@ -38,17 +50,15 @@
 }
 
 .about-frontPage-leftTextContainer {
-    position: absolute;
-    top: 10%;
-    left: 0;
+    height: 100%;
     width: 50%;
+    position: relative;
 }
 
 .about-frontPage-rightTextContainer {
     width: 35%;
-    position: absolute;
-    top: 15%;
-    right: 0;
+    height: 100%;
+    position: relative;
 }
 
 .about-frontPage-text{
@@ -58,7 +68,66 @@
     line-height: 1.575rem;
     letter-spacing: -0.02em;
     text-align: left;
+    position: absolute;
+    bottom: -100%;
+    transition: 1s ease-in-out;
 }
 .about-frontPage-text span {
     color: var(--second-color);
+}
+.frameImg1 {
+    bottom: -73%;
+}
+.frameImg2 {
+    bottom: -16%;
+}
+.frameImg3 {
+    bottom: -16%;
+}
+.frameImg4 {
+    bottom: 0;
+}
+.frameImg5 {
+    bottom: 0;
+}
+.frameTitle1 {
+    bottom: -100%;
+}
+
+.frameTitle2 {
+    bottom: 6%;
+}
+
+.frameTitle3 {
+    bottom: 23%;
+}
+.frameTitle4 {
+    bottom: 39%;
+}
+.frameTitle5 {
+    bottom: 39%;
+}
+
+.frameP33 {
+    bottom: 23%;
+}
+.frameP34 {
+    bottom: 37%;
+}
+.frameP35 {
+    bottom: 51%;
+}
+
+.frameP14 {
+    bottom: 22%;
+}
+.frameP15 {
+    bottom: 28%;
+}
+.frameP25 {
+    bottom: 1%;
+}
+
+.about-frontPage-container-block {
+    position: relative;
 }
