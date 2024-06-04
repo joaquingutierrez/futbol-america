@@ -9,7 +9,7 @@
 
 .about-frontPage-container {
     height: 100vh;
-    min-height: 57rem;
+    min-height: 59rem;
     width: 100%;
     color: var(--main-color);
     position: fixed;
@@ -50,15 +50,19 @@
 }
 
 .about-frontPage-leftTextContainer {
-    height: 100%;
-    width: 50%;
-    position: relative;
+    height: 16px;
+    width: 660px;
+    position: absolute;
+    top: 50%;
+    left: 0;
 }
 
 .about-frontPage-rightTextContainer {
+    height: 16px;
     width: 35%;
-    height: 100%;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    right: 0;
 }
 
 .about-frontPage-text{
@@ -69,7 +73,7 @@
     letter-spacing: -0.02em;
     text-align: left;
     position: absolute;
-    bottom: -100%;
+    bottom: -10000%;
     transition: 1s ease-in-out;
 }
 .about-frontPage-text span {
@@ -91,41 +95,41 @@
     bottom: 0;
 }
 .frameTitle1 {
-    bottom: -100%;
+    bottom: -10000%;
 }
 
 .frameTitle2 {
-    bottom: 6%;
+    bottom: -3300%;
 }
 
 .frameTitle3 {
-    bottom: 23%;
+    bottom: -1900%;
 }
 .frameTitle4 {
-    bottom: 39%;
+    bottom: -500%;
 }
 .frameTitle5 {
-    bottom: 39%;
+    bottom: -500%;
 }
 
 .frameP33 {
-    bottom: 23%;
+    bottom: -1900%;
 }
 .frameP34 {
-    bottom: 37%;
+    bottom: -700%;
 }
 .frameP35 {
-    bottom: 51%;
+    bottom: 500%;
 }
 
 .frameP14 {
-    bottom: 22%;
+    bottom: -2000%;
 }
 .frameP15 {
-    bottom: 28%;
+    bottom: -1200%;
 }
 .frameP25 {
-    bottom: 1%;
+    bottom: -2800%;
 }
 
 .about-frontPage-container-block {

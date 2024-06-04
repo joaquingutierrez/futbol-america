@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./style.css";
 import frontImg from "../../assets/images/aboutUs.png";
 
@@ -6,6 +6,7 @@ const AboutFrontPage = () => {
     const [scrollEnabled, setScrollEnabled] = useState(true);
     const [animationEnd, setAnimationEnd] = useState(false)
     const [frameNumber, setFrameNumber] = useState(1);
+    const imageRef = useRef(null)
 
     useEffect(() => {
         const handleScroll = () => {
@@ -23,6 +24,9 @@ const AboutFrontPage = () => {
 
     useEffect(()=>{
         document.body.classList.add('ocultar-scrollbar');
+        const imageHeight = window.screen.height * 1.73 / 16
+        imageHeight < (60*1.73) ? imageRef.current.style.height = 60*1.73 + "rem" : imageRef.current.style.height = imageHeight + "rem" 
+        
     },[])
     useEffect(() => {
         console.log(document.body)
@@ -131,7 +135,7 @@ const AboutFrontPage = () => {
 
     return (
         <section className={`about-frontPage-container ${animationEnd ? "about-frontPage-container-block" : ""}`}>
-            <img className={frameImgChoose(frameNumber)} src={frontImg} alt="" />
+            <img ref={imageRef} className={frameImgChoose(frameNumber)} src={frontImg} alt="" />
             <div className="about-frontPage-content">
                 <div className="about-frontPage-leftTextContainer">
                     <h1 className={`about-frontPage-title ${frameTitleChoose(frameNumber)}`}>DISCOVER OUR <span>STORY</span></h1>
