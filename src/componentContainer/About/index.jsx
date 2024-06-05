@@ -1,12 +1,12 @@
 import { Checkpoints, TeamGallery, TimeLapse } from "../../components"
 import AboutFrontPage from "../AboutFrontPage"
 import "./style.css"
-import juzonImg from "../../assets/team/aldo_juzon.png"
-import cearleyImg from "../../assets/team/campbell_mc_cearley .png"
-import neveleffImg from "../../assets/team/jeronimo_neveleff.png"
-import shewmakerImg from "../../assets/team/juliana_shewmaker.png"
-import sabinImg from "../../assets/team/marc_sabin.png"
-import sousaImg from "../../assets/team/willer_sousa.png"
+import guzonImg from "../../assets/team/guzon.jpg"
+import cearleyImg from "../../assets/team/cambell.jpg"
+import neveleffImg from "../../assets/team/neveleff.jpg"
+import shewmakerImg from "../../assets/team/unknown.png"
+import sabinImg from "../../assets/team/unknown.png"
+import sousaImg from "../../assets/team/willer.jpg"
 
 
 const About = () => {
@@ -23,7 +23,7 @@ const About = () => {
             desc: "Campbell grew up playing Club and high school soccer in St Louis, MO. and Mississippi. His formal education is in Business Administration and Psychology with a Sports Psychology focus from the University of Mississippi (Ole Miss). He started his experience with Futbol America as a client traveling to Buenos Aires and La Plata on separate trips.  He currently resides in Madison, Mississippi. Campbell brings a unique “clients” perspective to the Futbol America team and enables the program to create a unique foreign experience while keeping American cultural nuances in mind to ensure the best possible experience."
         },
         {
-            img: juzonImg,
+            img: guzonImg,
             name: "Aldo Guzon",
             desc: "Joined in 2019, Aldo arrived at Futbol America with one mission: improved the unbeatable. Prepare to be prepared. Graduated in Business Administration and Marketing, he became the heart of the company. Seriousness, quality, and precision.These are the words for his  hard work and commitment. His department responsability is to make participants receive the expected and beyond. Along with the rest of the team, create memories that will be taken for a lifetime."
         },
