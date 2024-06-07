@@ -112,17 +112,23 @@ const HotelSectionContainer = ({ hotel }) => {
                     <div className="hotelSection-phone-hotel-yellowBox"></div>
                     <div className="hotelSection-phone-hotelGalleryContainer">
                         <div className="hotelSection-phone-hotel-gallery">
-                            <div className={`hotelSection-hotel1 ${selected ? "hotelSection-hotel1Up" : ""}`} >
+                            <div className={`hotelSection-hotel1 ${selected === 2 || selected === 3 ? "hotelSection-hotel1Up" : ""}`} >
                                 <AutoGallery images={hotel === "Brazil" ? imagesGrandBrizo : othonPalace} />
                             </div>
-                            <div className={`hotelSection-hotel2 ${selected ? "hotelSection-hotel2Up" : ""}`} >
+                            <div className={`hotelSection-hotel2 ${selected === 2 ? "hotelSection-hotel2Up" : ""}`} >
                                 <AutoGallery images={hotel === "Brazil" ? imagesLandPlaza : southAmerica} />
                             </div>
+                            {hotel === "Argentina" && (
+                                <div className={`hotelSection-hotel2 ${selected === 3 ? "hotelSection-hotel2Up" : ""}`} >
+                                    <AutoGallery images={savoyOthon} />
+                                </div>
+                            )}
                         </div>
                     </div>
                     <div className="hotelSection-phone-buttonsContainer">
-                        <h3 onClick={() => handleClick(1)} className={`hotelSection-buttons-text ${!selected ? "hotelSection-buttons-textSelection" : ""}`}>{hotel === "Brazil" ? "Hotel Grand Brizo" : "Hotel Othon Palace"}</h3>
-                        <h3 onClick={() => handleClick(2)} className={`hotelSection-buttons-text ${selected ? "hotelSection-buttons-textSelection" : ""}`}>{hotel === "Brazil" ? "Hotel Land Plaza" : "Hotel South America"}</h3>
+                        <h3 onClick={() => handleClick(1)} className={`hotelSection-buttons-text ${selected === 1 ? "hotelSection-buttons-textSelection" : ""}`}>{hotel === "Brazil" ? "Hotel Grand Brizo" : "Hotel Othon Palace"}</h3>
+                        <h3 onClick={() => handleClick(2)} className={`hotelSection-buttons-text ${selected === 2 ? "hotelSection-buttons-textSelection" : ""}`}>{hotel === "Brazil" ? "Hotel Land Plaza" : "Hotel South America"}</h3>
+                        {hotel === "Argentina" && <h3 onClick={() => handleClick(3)} className={`hotelSection-buttons-text ${selected === 3 ? "hotelSection-buttons-textSelection" : ""}`}>Hotel Savoy Othon</h3>}
                     </div>
                     <div className="hotelSection-hotel-info-titleContainer">
                         <h2 className={`hotelSection-hotel1 ${selected === 2 || selected === 3 ? "hotelSection-hotel1Up" : ""}`}>{hotel === "Brazil" ? "HOTEL GRAN BRIZO" : "HOTEL OTHON PALACE"}</h2>
