@@ -7,8 +7,11 @@ import AutoGalleryContainer from "../AutoGalleryContainer"
 import HotelSectionContainer from "../HotelSectionContainer"
 import shermanImg from "../../assets/testimonies/sherman.jpg"
 import pittman from "../../assets/testimonies/pittman.jpg"
+import { useState } from "react"
 
 const Services = () => {
+
+    const [country, setCountry] = useState("Brazil")
 
     const imagesAndInfo = [
         {
@@ -41,14 +44,24 @@ const Services = () => {
         job: ""
     }
 
+    const changeCountry = () => {
+        if (country === "Argentina") {
+            setCountry("Brazil")
+        } else if (country === "Brazil") {
+            setCountry("Argentina")
+        } else {
+            setCountry("Brazil")
+        }
+    }
+
     return (
         <main>
-            <BgGallery info={imagesAndInfo} />
+            <BgGallery handleChange={changeCountry} info={imagesAndInfo} />
             <AccordionContainer />
             <AutoGalleryContainer />
             <InfiniteGallery hasTitle={false} />
-            <HotelSectionContainer />
-            <Schedules />
+            <HotelSectionContainer hotel={country} />
+            <Schedules schedule={country} />
             <section className="services-testimoniesSection">
                 <h2>Hear their <span>Stories</span></h2>
                 <div className="services-testimoniesContainer">

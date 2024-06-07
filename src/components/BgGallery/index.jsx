@@ -2,12 +2,13 @@ import { useState } from "react"
 import "./style.css"
 import Button from "../Button"
 
-const BgGallery = ({ info }) => {
+const BgGallery = ({handleChange, info }) => {
 
     const [items, setItems] = useState(info)
     const [animation, setAnimation] = useState(false)
 
     const handleClick = () => {
+        handleChange()
         setAnimation(true)
         setTimeout(() => {
             setItems(prev => {
