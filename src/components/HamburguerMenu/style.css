@@ -1,78 +1,76 @@
-/* Position and sizing of burger button */
-.bm-burger-button {
-    width: 30px;
-    height: 12px;
-    position: relative;
-}
-
-/* Color/shape of burger icon bars */
-.bm-burger-bars {
-    background: var(--text-color);
-}
-
-/* Color/shape of burger icon bars on hover*/
-.bm-burger-bars-hover {
-    background: var(--hover-gray);
-}
-
-/* Position and sizing of clickable cross button */
-.bm-cross-button {
-    height: 24px;
-    width: 24px;
-}
-
-/* Color/shape of close button cross */
-.bm-cross {
-    background: var(--second-color);
-}
-
-/*
-  Sidebar wrapper styles
-  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
-  */
-.bm-menu-wrap {
-    position: fixed;
-    height: fit-content!important;
-    margin-top: 24px;
-    margin-bottom: 24px;
-}
-
-/* General sidebar styles */
-.bm-menu {
-    background: var(--main-color);
-    padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
-    height: fit-content;
-    padding-bottom: 32px;
-}
-
-/* Wrapper for item list */
-.bm-item-list a, .bm-item-list li {
-    list-style: none;
-    text-decoration: none;
-    color: var(--text-color);
-    padding: 0.8em;
-    height: fit-content;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.125rem;
-    font-weight: 800;
-    line-height: 1.721rem;
-    letter-spacing: -0.02em;
-    text-align: left;
-}
-
-/* Individual item */
-.bm-item {
-    display: inline-block;
-}
-
-/* Styling of overlay */
-.bm-overlay {
-    background: rgba(0, 0, 0, 0.3);
-}
-
 @media (width > 1024px) {
     .hamburguerMenu {
         display: none;
     }
+}
+
+.hamburguerMenu-button {
+    width: 34px;
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: none;
+    border: none;
+}
+
+.hamburguerMenu-button-line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--text-color);
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+}
+
+.hamburguerMenu-button-line-transform:nth-of-type(1) {
+    transform: rotate(45deg) translate(4px, 3px);
+}
+
+.hamburguerMenu-button-line-transform:nth-of-type(2) {
+    opacity: 0;
+}
+
+.hamburguerMenu-button-line-transform:nth-of-type(3) {
+    transform: rotate(-45deg) translate(4px,-3px);
+}
+
+.hamburguerMenu-links {
+    height: fit-content;
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    transition: 0.2s ease-in-out;
+    z-index: 10;
+    list-style: none;
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 28px;
+    background-color: var(--main-color);
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+.hamburguerMenu-links li a {
+    color: var(--text-color);
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 1.53rem;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-decoration: none;
+}
+
+.hamburguerMenu-links li .active {
+    color: var(--second-color);
+}
+
+.hamburguerMenu-links-shown {
+    left: 0;
 }

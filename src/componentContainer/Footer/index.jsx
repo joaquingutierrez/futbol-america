@@ -34,7 +34,8 @@ const Footer = () => {
             <div className="footer-content">
                 <div className="footer-contactInfo">
                     <p>info@futbolamericatours.com</p>
-                    <p>Phone</p>
+                    <p>513-325-7423</p>
+                    <p>+54-9-223-5965-940</p>
                 </div>
                 <Link to={info.toLink} onClick={handleLinkClick} className="footer-title-link"><h4 className="footer-title">{info.title}</h4></Link>
                 <div className="footer-smIcons">
