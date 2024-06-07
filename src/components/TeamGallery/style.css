@@ -67,9 +67,12 @@
     line-height: 1.25rem;
     letter-spacing: -0.02em;
     text-align: left;
-    height: 20rem;
     overflow: hidden;
     margin: 0;
+}
+
+.teamGallery-desc:first-of-type {
+    height: 20rem;
 }
 
 .teamGallery-buttons {

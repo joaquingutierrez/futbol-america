@@ -33,16 +33,15 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-content">
                 <div className="footer-contactInfo">
-                    <p>futbolamerica@mail.com</p>
-                    <p>+54 9 2235 96 59 40</p>
-                    <p>+54 9 9907 9023</p>
+                    <p>info@futbolamericatours.com</p>
+                    <p>Phone</p>
                 </div>
                 <Link to={info.toLink} onClick={handleLinkClick} className="footer-title-link"><h4 className="footer-title">{info.title}</h4></Link>
                 <div className="footer-smIcons">
-                    <img src={linkedin} alt="LinkedIn" />
-                    <img src={twitterX} alt="Twitter - X" />
+                    {/* <img src={linkedin} alt="LinkedIn" />
+                    <img src={twitterX} alt="Twitter - X" /> */}
                     <img src={instagram} alt="Instagram" />
-                    <img src={facebook} alt="Facebook" />
+                    {/* {<img src={facebook} alt="Facebook" />} */}
                 </div>
             </div>
             <div className="footer-copyright">

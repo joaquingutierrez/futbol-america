@@ -36,6 +36,7 @@ const TeamGallery = ({ team }) => {
                 <div className="teamGallery-infoContainer">
                     <h3 className={`teamGallery-name ${verticalAnimation}`} onAnimationEnd={() => setVerticalAnimation("")}>{team[currentIndex].name}</h3>
                     <p className={`teamGallery-desc ${verticalAnimation}`} onAnimationEnd={() => setVerticalAnimation("")}>{team[currentIndex].desc}</p>
+                    {team[currentIndex].contactMail ? <p className={`teamGallery-desc ${verticalAnimation}`} onAnimationEnd={() => setVerticalAnimation("")}>Contact Email: {team[currentIndex].contactMail}</p> : <p></p>}
                 </div>
                 <div className="teamGallery-buttons">
                     {currentIndex > 0 && <p className="teamGallery-buttonPrev"><span onClick={handleClickPrev}>←</span></p>}

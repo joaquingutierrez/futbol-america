@@ -146,23 +146,25 @@
         content: "Futbol America is dedicated to creating and developing solutions for sports tourism, ensuring that institutions and players receive comprehensive logistics services while upholding our commitment to socially responsible sporting events.";
         display: block;
         width: 879%;
-        margin-top: 20px;
+        margin-top: 26px;
         color: var(--text-color);
     }
 
     .cp-dedication::after {
         content: "Based on our experience in the industry of soccer and our network composed by coaches, scouts, video analyst, we can always collaborate to propose the best pathways for your future in soccer. There are many angles to consider and help the player and his family to choose the right decision. Futbol America can be next to you in that specific moment of your life.";
         display: block;
-        width: 319%;
+        width: 400%;
         margin-top: 20px;
+        position: absolute;
         color: var(--text-color);
+        left: -175%;
     }
 
     .cp-excellence::after {
         content: "Our team selects hotels that cater to athletes' needs, offering differentiated room service, quality meals, and convenient locations near training fields and stadiums. With specialized expertise in sports tourism, we are always available to address any issues and provide assistance during your trip.";
         display: block;
         width: 720%;
-        margin-top: 20px;
+        margin-top: 26px;
         color: var(--text-color);
     }
 
@@ -180,18 +182,18 @@
         content: "We are guided by principles of ethics, transparency, and socio-environmental responsibility in all aspects of our operations.";
         display: block;
         width: 472%;
-        margin-top: 20px;
+        margin-top: 26px;
         color: var(--text-color);
     }
 
     .cp-career::after {
         content: "Based on our experience in the industry of soccer and our network composed by coaches, scouts, video analyst, we can always collaborate to propose the best pathways for your future in soccer. There are many angles to consider and help the player and his family to choose the right decision. Futbol America can be next to you in that specific moment of your life.";
         display: block;
-        width: 193%;
-        margin-top: 20px;
+        width: 200%;
+        margin-top: 28px;
         color: var(--text-color);
         position: absolute;
-        left: -55%;
+        left: -90%;
         top: 0;
     }
 }
