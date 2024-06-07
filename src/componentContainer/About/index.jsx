@@ -20,7 +20,7 @@ const About = () => {
         },
         {
             img: cearleyImg,
-            name: "Campbell Mc Cearley",
+            name: "Marc Sabin",
             desc: "Campbell grew up playing Club and high school soccer in St Louis, MO. and Mississippi. His formal education is in Business Administration and Psychology with a Sports Psychology focus from the University of Mississippi (Ole Miss). He started his experience with Futbol America as a client traveling to Buenos Aires and La Plata on separate trips.  He currently resides in Madison, Mississippi. Campbell brings a unique “clients” perspective to the Futbol America team and enables the program to create a unique foreign experience while keeping American cultural nuances in mind to ensure the best possible experience.",
             contactMail: ""
         },
