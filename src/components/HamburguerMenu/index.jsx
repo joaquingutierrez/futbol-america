@@ -13,12 +13,12 @@ const HamburguerMenu = ({ links }) => {
 
     return (
         <div className='hamburguerMenu'>
-            <button onClick={handleClick} className='hamburguerMenu-button'>
+            <button onClick={handleClick} className="hamburguerMenu-button">
                 <div className={`hamburguerMenu-button-line ${menuShown ? "hamburguerMenu-button-line-transform" : ""}`}></div>
                 <div className={`hamburguerMenu-button-line ${menuShown ? "hamburguerMenu-button-line-transform" : ""}`}></div>
                 <div className={`hamburguerMenu-button-line ${menuShown ? "hamburguerMenu-button-line-transform" : ""}`}></div>
             </button>
-            <ul className={`hamburguerMenu-links ${menuShown ? "hamburguerMenu-links-shown" : ""}`}>
+            <ul className={`hamburguerMenu-links ${menuShown ? "hamburguerMenu-links-shown" : "hamburguerMenu-links-hidden"}`}>
                 {links.map((link, index) => {
                     return (
                         <li onClick={handleClick} key={index}>
