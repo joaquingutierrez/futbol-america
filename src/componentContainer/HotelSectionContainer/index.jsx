@@ -53,8 +53,8 @@ const HotelSectionContainer = ({ hotel }) => {
     const [selected, setSelected] = useState(1)
 
     useEffect(() => {
-
-    }, []);
+        setSelected(1)
+    }, [hotel]);
 
     const imagesGrandBrizo = [
         image1,
@@ -115,7 +115,7 @@ const HotelSectionContainer = ({ hotel }) => {
                             <div className={`hotelSection-hotel1 ${selected === 2 || selected === 3 ? "hotelSection-hotel1Up" : ""}`} >
                                 <AutoGallery images={hotel === "Brazil" ? imagesGrandBrizo : othonPalace} />
                             </div>
-                            <div className={`hotelSection-hotel2 ${selected === 2 ? "hotelSection-hotel2Up" : ""}`} >
+                            <div className={`hotelSection-hotel2 ${selected === 2 ? "hotelSection-hotel2Up" : ""} ${selected === 3 ? "hotelSection-hotel1Up" : ""}`} >
                                 <AutoGallery images={hotel === "Brazil" ? imagesLandPlaza : southAmerica} />
                             </div>
                             {hotel === "Argentina" && (
@@ -132,7 +132,7 @@ const HotelSectionContainer = ({ hotel }) => {
                     </div>
                     <div className="hotelSection-hotel-info-titleContainer">
                         <h2 className={`hotelSection-hotel1 ${selected === 2 || selected === 3 ? "hotelSection-hotel1Up" : ""}`}>{hotel === "Brazil" ? "HOTEL GRAN BRIZO" : "HOTEL OTHON PALACE"}</h2>
-                        <h2 className={`hotelSection-hotel2 ${selected === 2 ? "hotelSection-hotel2Up" : ""}`}>{hotel === "Brazil" ? "HOTEL LAND PLAZA" : "HOTEL SOUTH AMERICA"}</h2>
+                        <h2 className={`hotelSection-hotel2 ${selected === 2 ? "hotelSection-hotel2Up" : ""} ${selected === 3 ? "hotelSection-hotel1Up" : ""}`}>{hotel === "Brazil" ? "HOTEL LAND PLAZA" : "HOTEL SOUTH AMERICA"}</h2>
                         {hotel === "Argentina" && <h2 className={`hotelSection-hotel2 ${selected === 3 ? "hotelSection-hotel2Up" : ""}`}>HOTEL SAVOY OTHON</h2>
                         }
                     </div>
@@ -172,7 +172,7 @@ const HotelSectionContainer = ({ hotel }) => {
                     <div className={`hotelSection-hotel1 ${selected === 2 || selected === 3 ? "hotelSection-hotel1Up" : ""}`} >
                         <AutoGallery images={hotel === "Brazil" ? imagesGrandBrizo : othonPalace} />
                     </div>
-                    <div className={`hotelSection-hotel2 ${selected === 2 ? "hotelSection-hotel2Up" : ""}`} >
+                    <div className={`hotelSection-hotel2 ${selected === 2 ? "hotelSection-hotel2Up" : ""} ${selected === 3 ? "hotelSection-hotel1Up" : ""}`} >
                         <AutoGallery images={hotel === "Brazil" ? imagesLandPlaza : southAmerica} />
                     </div>
                     {hotel === "Argentina" && (
