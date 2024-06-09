@@ -61,7 +61,8 @@
     padding-top: 28px;
     padding-bottom: 28px;
     position: absolute;
-    left: 0;
+    right: 0;
+    overflow: hidden;
 }
 
 .hamburguerMenu-links li a {
@@ -80,5 +81,5 @@
 }
 
 .hamburguerMenu-links-hidden {
-    left: 100%;
+    width: 0;
 }

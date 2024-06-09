@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-import { DropDown, HamburguerMenu, NavBar } from "../../components"
+import { DropDown, NavBar } from "../../components"
 
 import "./style.css"
 
@@ -14,7 +14,6 @@ const Header = ({ links }) => {
                 <div className="navOptions">
                     <DropDown />
                     <NavBar links={links} />
-                    <HamburguerMenu links={links} />
                 </div>
             </div>
         </header>

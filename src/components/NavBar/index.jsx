@@ -1,10 +1,11 @@
 import { NavLink } from "react-router-dom"
 
 import "./style.css"
+import HamburguerMenu from "../HamburguerMenu"
 
 const NavBar = ({ links }) => {
     return (
-        <nav>
+        <nav className="navBar-container">
             <ul className="navLinks">
                 {links.map((link, index) => {
                     return (
@@ -14,6 +15,7 @@ const NavBar = ({ links }) => {
                     )
                 })}
             </ul>
+            <HamburguerMenu links={links} />
         </nav>
     )
 }
