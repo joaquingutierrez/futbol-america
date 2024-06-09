@@ -4,10 +4,18 @@ import Button from "../Button"
 
 const FrontPage = () => {
 
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const video = document.getElementById('contactVideo');
+        video.muted = true; // Asegúrate de que el video esté silenciado
+        video.play().catch((error) => {
+            console.error('Error attempting to play video:', error);
+        });
+    });
+
     return (
         <div className="home-frontPage">
             <video autoPlay muted loop playsinline id="fontPageVideo">
-                <source src={videoFrontPage} />
+                <source src={videoFrontPage} type="video/mp4" />
             </video>
             <div className="home-frontPage-container">
                 <div className="home-frontPage-content">
