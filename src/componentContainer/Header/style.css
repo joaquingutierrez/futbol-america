@@ -3,19 +3,16 @@
     margin-top: 24px;
     position: absolute;
     top: 0;
-    left: 50%;
     z-index: 10;
-    transform: translateX(-50%);
-}
-
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    overflow-x: clip;
-    position: relative;
+    }
+    
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        height: inherit;
 }
 
 .title {
