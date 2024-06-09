@@ -23,7 +23,7 @@ const Contact = () => {
                 </div>
             </main>
             <div className="contact-videoContainer">
-                <video autoPlay muted loop id="contactVideo">
+                <video autoPlay muted loop playsinline id="contactVideo">
                     <source src={video} />
                 </video>
             </div>

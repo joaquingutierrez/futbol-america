@@ -76,7 +76,7 @@ const DoubleScrollGallery = () => {
                 )}
             </div>
             <div ref={videoRef} className={`doubleScrollGallery-videoContainer ${isVideoAtTop ? "doubleScrollGallery-opacity1" : "doubleScrollGallery-opacity0"}`}>
-                <video autoPlay muted loop id="home-finalVideo" className={`${isFinalAtTop ? "doubleScrollGallery-scale" : ""}`}>
+                <video autoPlay muted loop playsinline id="home-finalVideo" className={`${isFinalAtTop ? "doubleScrollGallery-scale" : ""}`}>
                     <source src={peachVideo} />
                 </video>
             </div>

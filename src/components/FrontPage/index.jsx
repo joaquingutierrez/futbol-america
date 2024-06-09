@@ -6,7 +6,7 @@ const FrontPage = () => {
 
     return (
         <div className="home-frontPage">
-            <video autoPlay muted loop id="fontPageVideo">
+            <video autoPlay muted loop playsinline id="fontPageVideo">
                 <source src={videoFrontPage} />
             </video>
             <div className="home-frontPage-container">
