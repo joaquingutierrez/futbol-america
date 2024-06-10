@@ -18,7 +18,7 @@ const Contact = () => {
                             <p>By submitting this form you agree to send your informationto Futbol America . We will use it
                                 to support our commercial activity and send your newsletters according to our pricavy policy.</p>
                         </div>
-                        <Button   title="Submit" white={false}/>
+                        <Button title="Submit" white={false} />
                     </form>
                 </div>
             </main>
