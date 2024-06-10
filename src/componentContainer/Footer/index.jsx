@@ -41,7 +41,7 @@ const Footer = () => {
                 <div className="footer-smIcons">
                     {/* <img src={linkedin} alt="LinkedIn" />
                     <img src={twitterX} alt="Twitter - X" /> */}
-                    <img src={instagram} alt="Instagram" />
+                    <a href="https://www.instagram.com/futbol_america_tours?igsh=bmJ3MGc1MTdtNms=" target="_blank" rel="noopener noreferrer"><img src={instagram} alt="Instagram" /></a>
                     {/* {<img src={facebook} alt="Facebook" />} */}
                 </div>
             </div>

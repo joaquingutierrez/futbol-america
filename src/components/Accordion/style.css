@@ -242,6 +242,7 @@
 
     .accordion-phone-contentContainer {
         margin: auto 16px;
+        display: block;
     }
 
 }

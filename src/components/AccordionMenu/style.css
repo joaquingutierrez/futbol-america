@@ -19,10 +19,21 @@
     margin: 0;
 }
 
+.accodrionMenu-itemContainer {
+    position: relative;
+}
+
 .accordionMenu-textContainer {
     color: var(--main-color);
     background-color: var(--text-color);
-    transition: 0.2s ease-in-out;
+    transition: max-height 0.2s ease-in-out;
+    height: 100%;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.accordionMenu-textContainer-expand {
+    max-height: 15.625rem;
 }
 
 .accordionMenu-textContainer p {

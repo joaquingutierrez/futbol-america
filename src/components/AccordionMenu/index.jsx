@@ -2,15 +2,13 @@ import { useState } from "react"
 import "./style.css"
 
 const AccordionItem = ({ title, content, isOpen, onClick }) => (
-    <div>
+    <div className="accodrionMenu-itemContainer">
         <div className={`accordionMenu-titleContainer ${isOpen ? "accordionMenu-titleContainer-selected" : ""}`} onClick={onClick}>
             <h3>{title}</h3>
         </div>
-        {isOpen && (
-            <div className="accordionMenu-textContainer">
-                <p>{content}</p>
-            </div>
-        )}
+        <div className={`accordionMenu-textContainer ${isOpen ? "accordionMenu-textContainer-expand" : ""}`}>
+            <p>{content}</p>
+        </div>
     </div>
 );
 
