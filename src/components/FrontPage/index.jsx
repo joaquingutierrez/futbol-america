@@ -1,19 +1,12 @@
 import "./style.css"
 import videoFrontPage from "../../assets/videos/home-frontPage.mp4"
 import Button from "../Button"
-import { useEffect, useRef } from "react"
 
 const FrontPage = () => {
 
-    const videoRef = useRef(null)
-
-useEffect(()=> {
-    videoRef.current.play()
-},[])
-
     return (
         <div className="home-frontPage">
-            <video ref={videoRef} width="100%" height="100%" autoPlay muted loop playsInline id="fontPageVideo">
+            <video autoPlay muted loop playsInline id="fontPageVideo">
                 <source src={videoFrontPage} type="video/mp4" />
             </video>
             <div className="home-frontPage-container">
