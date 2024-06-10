@@ -13,7 +13,7 @@ useEffect(()=> {
 
     return (
         <div className="home-frontPage">
-            <video ref={videoRef} width="100%" height="100%" autoplay="autoplay" muted loop playsinline id="fontPageVideo">
+            <video ref={videoRef} width="100%" height="100%" autoPlay muted loop playsInline id="fontPageVideo">
                 <source src={videoFrontPage} type="video/mp4" />
             </video>
             <div className="home-frontPage-container">
