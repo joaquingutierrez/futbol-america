@@ -118,7 +118,7 @@ const HotelSectionContainer = ({ hotel }) => {
                             <div className={`hotelSection-hotel2 ${selected === 2 ? "hotelSection-hotel2Up" : ""} ${selected === 3 ? "hotelSection-hotel1Up" : ""}`} >
                                 <AutoGallery images={hotel === "Brazil" ? imagesLandPlaza : southAmerica} />
                             </div>
-                            {hotel === "Argentina" && (
+                            {hotel === "Brazil" && (
                                 <div className={`hotelSection-hotel2 ${selected === 3 ? "hotelSection-hotel2Up" : ""}`} >
                                     <AutoGallery images={savoyOthon} />
                                 </div>
@@ -128,16 +128,16 @@ const HotelSectionContainer = ({ hotel }) => {
                     <div className="hotelSection-phone-buttonsContainer">
                         <h3 onClick={() => handleClick(1)} className={`hotelSection-buttons-text ${selected === 1 ? "hotelSection-buttons-textSelection" : ""}`}>{hotel === "Brazil" ? "Hotel Grand Brizo" : "Hotel Othon Palace"}</h3>
                         <h3 onClick={() => handleClick(2)} className={`hotelSection-buttons-text ${selected === 2 ? "hotelSection-buttons-textSelection" : ""}`}>{hotel === "Brazil" ? "Hotel Land Plaza" : "Hotel South America"}</h3>
-                        {hotel === "Argentina" && <h3 onClick={() => handleClick(3)} className={`hotelSection-buttons-text ${selected === 3 ? "hotelSection-buttons-textSelection" : ""}`}>Hotel Savoy Othon</h3>}
+                        {hotel === "Brazil" && <h3 onClick={() => handleClick(3)} className={`hotelSection-buttons-text ${selected === 3 ? "hotelSection-buttons-textSelection" : ""}`}>Hotel Savoy Othon</h3>}
                     </div>
                     <div className="hotelSection-hotel-info-titleContainer">
                         <h2 className={`hotelSection-hotel1 ${selected === 2 || selected === 3 ? "hotelSection-hotel1Up" : ""}`}>{hotel === "Brazil" ? "HOTEL GRAN BRIZO" : "HOTEL OTHON PALACE"}</h2>
                         <h2 className={`hotelSection-hotel2 ${selected === 2 ? "hotelSection-hotel2Up" : ""} ${selected === 3 ? "hotelSection-hotel1Up" : ""}`}>{hotel === "Brazil" ? "HOTEL LAND PLAZA" : "HOTEL SOUTH AMERICA"}</h2>
-                        {hotel === "Argentina" && <h2 className={`hotelSection-hotel2 ${selected === 3 ? "hotelSection-hotel2Up" : ""}`}>HOTEL SAVOY OTHON</h2>
+                        {hotel === "Brazil" && <h2 className={`hotelSection-hotel2 ${selected === 3 ? "hotelSection-hotel2Up" : ""}`}>HOTEL SAVOY OTHON</h2>
                         }
                     </div>
                     <ul>
-                        {hotel === "Argentina" ? (
+                        {hotel === "Brazil" ? (
                             <>
                                 <li><img src={customerIcon} alt="" />2 people</li>
                                 <li className={`${selected === 2 ? "hotelSection-hotel1Right" : ""}`}><img src={bedIcon} alt="" />Queen bed</li>
@@ -163,7 +163,7 @@ const HotelSectionContainer = ({ hotel }) => {
                     <div className="hotelSection-buttonsContainer">
                         <h3 onClick={() => handleClick(1)} className={`hotelSection-buttons-text ${selected === 1 ? "hotelSection-buttons-textSelection" : ""}`}>{hotel === "Brazil" ? "Hotel Grand Brizo" : "Hotel Othon Palace"}</h3>
                         <h3 onClick={() => handleClick(2)} className={`hotelSection-buttons-text ${selected === 2 ? "hotelSection-buttons-textSelection" : ""}`}>{hotel === "Brazil" ? "Hotel Land Plaza" : "Hotel South America"}</h3>
-                        {hotel === "Argentina" && <h3 onClick={() => handleClick(3)} className={`hotelSection-buttons-text ${selected === 3 ? "hotelSection-buttons-textSelection" : ""}`}>Hotel Savoy Othon</h3>}
+                        {hotel === "Brazil" && <h3 onClick={() => handleClick(3)} className={`hotelSection-buttons-text ${selected === 3 ? "hotelSection-buttons-textSelection" : ""}`}>Hotel Savoy Othon</h3>}
                     </div>
                 </div>
                 <div className="hotelSection-hotel-yellowBox">
@@ -175,7 +175,7 @@ const HotelSectionContainer = ({ hotel }) => {
                     <div className={`hotelSection-hotel2 ${selected === 2 ? "hotelSection-hotel2Up" : ""} ${selected === 3 ? "hotelSection-hotel1Up" : ""}`} >
                         <AutoGallery images={hotel === "Brazil" ? imagesLandPlaza : southAmerica} />
                     </div>
-                    {hotel === "Argentina" && (
+                    {hotel === "Brazil" && (
                         <div className={`hotelSection-hotel2 ${selected === 3 ? "hotelSection-hotel2Up" : ""}`} >
                             <AutoGallery images={savoyOthon} />
                         </div>

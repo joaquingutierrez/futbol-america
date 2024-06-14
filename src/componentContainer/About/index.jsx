@@ -2,10 +2,9 @@ import { Checkpoints, TeamGallery, TimeLapse } from "../../components"
 import AboutFrontPage from "../AboutFrontPage"
 import "./style.css"
 import guzonImg from "../../assets/team/guzon.jpg"
-import cearleyImg from "../../assets/team/cambell.jpg"
 import neveleffImg from "../../assets/team/neveleff.jpg"
 import shewmakerImg from "../../assets/team/unknown.png"
-import sabinImg from "../../assets/team/unknown.png"
+import sabinImg from "../../assets/team/cambell.jpg"
 import sousaImg from "../../assets/team/willer.jpg"
 
 
@@ -17,12 +16,6 @@ const About = () => {
             name: "Jeronimo Neveleff",
             desc: "After more then 10 years assisitng Soccer Tours at Futbol America, First Team Tour Operator in Southamerica, founded in 1998, Jeronimo became CEO in 2019. Argentinian native, holding a Physical Education and Marketing degree. He is also a certified licenced Coach. Involved at details on all levels of the process from professional to amatheur teams, continues the company tradition to deliver the ¨Experience of their lives¨ to all participants. Fluent in Spanish, English and Portuguese.",
             contactMail: "jneveleff@futbolamericatours.com"
-        },
-        {
-            img: cearleyImg,
-            name: "Marc Sabin",
-            desc: "Campbell grew up playing Club and high school soccer in St Louis, MO. and Mississippi. His formal education is in Business Administration and Psychology with a Sports Psychology focus from the University of Mississippi (Ole Miss). He started his experience with Futbol America as a client traveling to Buenos Aires and La Plata on separate trips.  He currently resides in Madison, Mississippi. Campbell brings a unique “clients” perspective to the Futbol America team and enables the program to create a unique foreign experience while keeping American cultural nuances in mind to ensure the best possible experience.",
-            contactMail: ""
         },
         {
             img: guzonImg,
