@@ -3,8 +3,8 @@ import AboutFrontPage from "../AboutFrontPage"
 import "./style.css"
 import guzonImg from "../../assets/team/guzon.jpg"
 import neveleffImg from "../../assets/team/neveleff.jpg"
-import shewmakerImg from "../../assets/team/unknown.png"
-import sabinImg from "../../assets/team/cambell.jpg"
+import unknownImg from "../../assets/team/unknown.png"
+import sabinImg from "../../assets/team/sabin.jpg"
 import sousaImg from "../../assets/team/willer.jpg"
 
 
@@ -24,7 +24,7 @@ const About = () => {
             contactMail: "guzonaldo@futbolamericatours.com"
         },
         {
-            img: shewmakerImg,
+            img: unknownImg,
             name: "Juliana Shewmaker",
             desc: "Based in the Tampa Bay area with over 32 years of experience in the business of travel, Juliana Shewmaker is the sole owner of Tropical Travel Network LLC and  has helped thousands in the planning of business, leisure ,missionary as well as sports travel. Juliana, as well as other employees at the office which is located in Pinellas Park (Florida) are fluent in English , Portuguese and Spanish languages. Working with Futbol America since 2016 more than 100 groups and families were always satisfied with the process and care delivered by Juliana and her special care looking for best available options and secure ways to travel.",
             contactMail: ""
@@ -34,6 +34,12 @@ const About = () => {
             name: "Marc Sabin",
             desc: "Based in Cincinnati, Marc has the responsibility of the US office. He played at the University of Kentucky and holds a USSF “A” license, USSF National Youth License and a NSCAA DIRECTOR OF COACHING Diploma. He has an extensive 25 plus year coaching career at the  USSDA, ECNL, USYSA,  US club NPL and Collegiate level. This and having personally lead 5 teams internationally, gives him the perfect vision to propose and interact with Coaches and Club Directors. Marc also facilitates scheduling an International Team Tour and advising young players on International Residential programs. Futbol America is proud to work with Marc as US Representative since 2023.",
             contactMail: "marcsabin@futbolamericatours.com"
+        },
+        {
+            img: unknownImg,
+            name: "Campbell Mc Cearley",
+            desc: "Campbell grew up playing Club and high school soccer in St Louis, MO. and Mississippi. His formal education is in Business Administration and Psychology with a Sports Psychology focus from the University of Mississippi (Ole Miss). He started his experience with Futbol America as a client traveling to Buenos Aires and La Plata on separate trips. He currently resides in Madison, Mississippi. Campbell brings a unique “clients” perspective to the Futbol America team and enables the program to create a unique foreign experience while keeping American cultural nuances in mind to ensure the best possible experience.",
+            contactMail: ""
         },
         {
             img: sousaImg,
