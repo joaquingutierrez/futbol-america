@@ -51,7 +51,7 @@ const InfiniteGallery = ({hasTitle = true}) => {
 
     const Tag = ({ text, color }) => (
         <div className='tag' style={{ '--color': color }}>
-            <img src={text} alt="" />
+            <img loading="lazy" src={text} alt="" />
         </div>
     );
 

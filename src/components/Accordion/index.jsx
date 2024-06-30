@@ -53,7 +53,7 @@ const Accordion = ({ items }) => {
                                     <h4>{item.sideTitle}</h4>
                                 </div>
                                 <div className="accordion-item-imgContainer">
-                                    <img src={item.img} alt="" />
+                                    <img loading="lazy" src={item.img} alt="" />
                                 </div>
                                 <div className="accordion-item-textContainer">
                                     <h3>{item.title}</h3>

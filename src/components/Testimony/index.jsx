@@ -5,7 +5,7 @@ const Testimony = ({ content }) => {
 
     const renderStars = (number) => {
         return Array.from({ length: number }, (_, i) => (
-            <img key={i} src={star} alt="star" />
+            <img loading="lazy" key={i} src={star} alt="star" />
         ));
     }
 
@@ -19,7 +19,7 @@ const Testimony = ({ content }) => {
             <p className="testimony-desc">{content.desc}</p>
             <div className="testimony-infoContainer">
                 <div className="testimony-info-imgContainer">
-                    <img src={content.img} alt="" />
+                    <img loading="lazy" src={content.img} alt="" />
                 </div>
                 <div className="testimony-info-textContainer">
                     <h4>{content.name}</h4>

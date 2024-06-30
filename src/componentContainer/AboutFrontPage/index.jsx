@@ -138,7 +138,7 @@ const AboutFrontPage = () => {
 
     return (
         <section className={`about-frontPage-container ${animationEnd ? "about-frontPage-container-block" : ""}`}>
-            <img ref={imageRef} className={frameImgChoose(frameNumber)} src={frontImg} alt="" />
+            <img loading="lazy" ref={imageRef} className={frameImgChoose(frameNumber)} src={frontImg} alt="" />
             <div className="about-frontPage-content">
                 <div className="about-frontPage-rightTextContainer">
                     <p className={`about-frontPage-text ${frameP3Choose(frameNumber)}`}>Since <span>1998</span>, Futbol America Tours has been a leader in sports tourism, dedicated to providing exceptional logistics services and travel organization for athletes, managers, and teams connected to the world of sports. Our commitment to excellence is evident in every aspect of our highly specialized services, tailored to meet the unique needs and specifications of each sport.</p>

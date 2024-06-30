@@ -189,7 +189,7 @@ const HotelSectionContainer = ({ hotel }) => {
 
                         </div>
                         <div className="hotelSection-van-imgContainer-phone">
-                            <img src={vanImg} alt="" />
+                            <img loading="lazy" src={vanImg} alt="" />
                         </div>
                     </div>
                     <p>Our buses and vans come equipped with bathrooms, air conditioning, and DVD players for your comfort. We offer round-trip transfers between the airport and hotel, as well as transportation for friendly matches.</p>
@@ -198,7 +198,7 @@ const HotelSectionContainer = ({ hotel }) => {
 
                 </div>
                 <div className="hotelSection-van-imgContainer">
-                    <img src={vanImg} alt="" />
+                    <img loading="lazy" src={vanImg} alt="" />
                 </div>
             </div>
         </section >

@@ -30,7 +30,7 @@ const TeamGallery = ({ team }) => {
     return (
         <div className="teamGallery-container">
             <div className="teamGallery-imageContainer">
-                <img src={team[currentIndex].img} alt="" className={horizontalAnimation} onAnimationEnd={() => setHorizontalAnimation("")} />
+                <img loading="lazy" src={team[currentIndex].img} alt="" className={horizontalAnimation} onAnimationEnd={() => setHorizontalAnimation("")} />
             </div>
             <div className="teamGallery-content">
                 <div className="teamGallery-infoContainer">
