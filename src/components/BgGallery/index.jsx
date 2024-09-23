@@ -42,7 +42,7 @@ const BgGallery = ({ handleChange, info }) => {
                                         <div className={`bgGallery-info ${animation ? "bgGallery-info-animation-up bgGallery-transition " : ""}`} key={index}>
                                             <h2>{item.title}</h2>
                                             <p>{item.desc}</p>
-                                            <Button className="bgGallery-button-JoinUs" toLink={"/contact"} title="Join Us" />
+                                            <Button className="bgGallery-button-JoinUs" toLink={"/contact"} title="More Information" />
                                         </div>
                                     )
                                 })}
@@ -80,7 +80,7 @@ const BgGallery = ({ handleChange, info }) => {
                         </div>
                         <p className={animation ? "bgGallery-bgImg-off" : ""}>{items[0].desc}</p>
                         <div className="bgGallery-button-JoinUsContainer">
-                            <Button toLink={"/contact"} title="Join Us" />
+                            <Button toLink={"/contact"} title="" />
                         </div>
                     </div>
                 </>

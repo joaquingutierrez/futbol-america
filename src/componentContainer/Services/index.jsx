@@ -69,6 +69,7 @@ const Services = () => {
                     <Testimony content={testimony2} />
                 </div>
             </section>
+            <InfiniteGallery />
         </main>
     )
 }

@@ -5,6 +5,7 @@ import Swal from 'sweetalert2'
 import "./style.css"
 import video from "../../assets/videos/contact-video.mp4"
 import Button from "../../components/Button"
+import { InfiniteGallery } from "../../components";
 
 const Contact = () => {
     const form = useRef();
@@ -55,6 +56,7 @@ const Contact = () => {
                     <source src={video} />
                 </video>
             </div>
+            <InfiniteGallery />
         </>
     )
 }

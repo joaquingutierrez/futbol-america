@@ -11,11 +11,11 @@ const FrontPage = () => {
             </video>
             <div className="home-frontPage-container">
                 <div className="home-frontPage-content">
-                    <h1 className="home-frontPage-title">DIVE INTO OUR WORLD</h1>
+                    <h1 className="home-frontPage-title">YOUR NEXT SOCCER TOUR IS HERE</h1>
                     <p className="home-frontPage-text">Your gateway to unforgettable soccer experiences in Argentina and Brazil.</p>
                     <div className="home-frontPage-buttonContainer">
-                        <Button toLink={"/services"} title="Our Packages" white={true} />
-                        <Button toLink={"/contact"} title="Join Us" white={false} />
+                        <Button toLink={"/services"} title="OUR SERVICES" white={true} />
+                        <Button toLink={"/contact"} title="More Information" white={false} />
                     </div>
                 </div>
             </div>

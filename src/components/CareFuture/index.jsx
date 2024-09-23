@@ -13,7 +13,7 @@ const CareFuture = () => {
                 <img loading="lazy" className="careFuture-bg" src={background} alt="" />
                 <div className="careFuture-container">
                     <div className="careFuture-content">
-                        <h2 className="careFuture-title"><span>WE CARE</span> ABOUT YOUR FUTURE</h2>
+                        <h2 className="careFuture-title"><span>SOCCER EXPERIENCE</span> FOR YOU WHOLE LIFE</h2>
                         <p className="careFuture-text">Immerse yourself in the excitement of soccer and the vibrant tapestry of South American culture like never before.</p>
                         <Button toLink={"/about"} title="Find Out More" white={false} />
                     </div>

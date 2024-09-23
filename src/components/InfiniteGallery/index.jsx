@@ -1,32 +1,39 @@
 import "./style.css"
 import boca from "../../assets/clubs/boca.png"
 import botafogo from "../../assets/clubs/botafogo.png"
-import corinthians from "../../assets/clubs/corinthians.png"
 import crest from "../../assets/clubs/crest.png"
 import cruzeiro from "../../assets/clubs/cruzeiro.png"
 import independiente from "../../assets/clubs/independiente.png"
-import newell from "../../assets/clubs/newell.png"
 import palmeiras from "../../assets/clubs/palmeiras.png"
 import ska from "../../assets/clubs/ska.png"
 import spfc from "../../assets/clubs/spfc.png"
 import usa from "../../assets/clubs/usa.png"
 import vasco from "../../assets/clubs/vasco_da_gama.png"
+import defensa_y_justicia from "../../assets/clubs/defensa_y_justicia.png"
+import edlp from "../../assets/clubs/edelp.png"
+import gimnasialaplata from "../../assets/clubs/gimnasiadelaplata.png"
+import nacionaluruguay from "../../assets/clubs/nacionaluruguay.png"
+import huachipatochile from "../../assets/clubs/huachipatochile.png"
+
 
 const InfiniteGallery = ({hasTitle = true}) => {
 
     const TAGS = [
         boca,
         botafogo,
-        corinthians,
         crest,
         cruzeiro,
         independiente,
-        newell,
         palmeiras,
         ska,
         spfc,
         usa,
-        vasco
+        vasco,
+        defensa_y_justicia,
+        edlp,
+        gimnasialaplata,
+        nacionaluruguay,
+        huachipatochile
     ];
     const DURATION = 40000;
     const ROWS = 1;
@@ -58,7 +65,7 @@ const InfiniteGallery = ({hasTitle = true}) => {
 
     return (
         <div className='tag-list'>
-            {hasTitle && <h2 className="tag-list-title">Official Sponsors</h2>}
+            {hasTitle && <h2 className="tag-list-title">Our Partners</h2>}
             <div className="tag-list-wrapper">
                 {[...new Array(ROWS)].map((_, i) => (
                     <InfiniteLoopSlider key={i} duration={random(DURATION - 5000, DURATION + 5000)} reverse={i % 2}>

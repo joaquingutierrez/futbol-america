@@ -1,4 +1,4 @@
-import { Checkpoints, TeamGallery, TimeLapse } from "../../components"
+import { Checkpoints, InfiniteGallery, TeamGallery, TimeLapse } from "../../components"
 import AboutFrontPage from "../AboutFrontPage"
 import "./style.css"
 import guzonImg from "../../assets/team/guzon.jpg"
@@ -46,6 +46,15 @@ const About = () => {
             name: "Willer Sousa",
             desc: "With a degree in Production Engineering and Logistics from the Estacio de Sá University in Rio de Janeiro, Willer has spent more than 28 years dedicated to soccer. As a player, his carrer for clubs in Brazil and Europe gave him a wide vision of the impact of well organize clubs can provide for athetes. After retirement  he has participate and organized pre-season and logistics for soccer clubs, professional games and scouting consultancy. Proud of providing opportunities to players and top team experiences, he works in creative ways to deliver the best of the best on the southamerican soccer culture and willing to colaborate with young players pathway when is needed. Since 2007, he has been responsible for Futbol América's operations in Brazil and Argentina.",
             contactMail: "willersousa@futbolamericatours.com"
+        },
+        {
+            img: unknownImg,
+            name: "Juan Barrientos",
+            desc: `Juan Barrientos is an Argentinian ex soccer player with a professional career for more than 12 years.\n
+From Racing Club de Avellaneda (Argentina) to the first European leagues (France, Greece, Bulgaria), Juan has obtained a great experience that has allowed him to develop as a youth Coach (USSF D License) in Florida Premier FC since 2015 for ECNL/ECNLR league in Tampa, Florida.\n
+Juan is also the creator of Total Futbol Camp, a soccer program for boys and girls that combine fun and development to grow in the skills and the passion for the game.
+`,
+            contactMail: ""
         }
     ]
 
@@ -58,6 +67,7 @@ const About = () => {
                 <p>Beyond the world of soccer, Futbol America Tours brings over 24 years of expertise in crafting exceptional travel experiences for a diverse range of audiences. From corporate travel solutions to seamless crew logistics and dynamic event management, our team is dedicated to ensuring every journey is effortless and memorable. With a network of reliable partners and affiliates spanning across the globe, including Argentina, Chile, and the United States, we have successfully delivered projects across various industries and sectors. Explore our comprehensive travel services below, designed to simplify your travel needs and elevate your experience to new heights. </p>
             </div>
             <TimeLapse />
+            <InfiniteGallery />
         </main>
     )
 }

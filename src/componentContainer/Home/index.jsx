@@ -6,9 +6,9 @@ const Home = () => {
     return (
         <main>
             <FrontPage />
-            <InfiniteGallery />
             <CareFuture />
             <DoubleScrollGallery />
+            <InfiniteGallery />
         </main>
     )
 }
