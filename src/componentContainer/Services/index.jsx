@@ -301,10 +301,7 @@ const Services = () => {
                 <>
                     <BgGallery info={imagesAndInfo[country.toUpperCase()]} />
                     <AccordionContainer />
-                    <AutoGalleryContainer />
-                    <InfiniteGallery hasTitle={false} />
                     <HotelSectionContainer hotels={hotels[country.toUpperCase()]} />
-                    <Schedules schedule={country} />
                     <section className="services-testimoniesSection">
                         <h2>Hear their <span>Stories</span></h2>
                         <div className="services-testimoniesContainer">
@@ -312,6 +309,7 @@ const Services = () => {
                             <Testimony content={testimony2} />
                         </div>
                     </section>
+                    <AutoGalleryContainer />
                     <InfiniteGallery />
                 </>
             ) : (

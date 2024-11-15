@@ -210,6 +210,9 @@
 }
 
 @media (width < 800px) {
+    .bgGallery-contentContainer {
+        margin: auto 16px;
+    }
     .bgGallery-content h2 {
         font-size: 2.5rem;
         line-height: 2.6rem;
