@@ -1,74 +1,40 @@
 import { useState } from "react"
+
 import "./style.css"
 import Button from "../Button"
 import useImageLoader from "../../customHook/useImageLoader/useImageLoader"
 import Spinner from "../Spinner"
 
-const BgGallery = ({ country, info }) => {
+const BgGallery = ({ info }) => {
 
-    const [items, setItems] = useState(info)
     const [animation, setAnimation] = useState(false)
 
-    const { loaded, error, imageRefs } = useImageLoader(info.map(item => item.img))
+    const { loaded, error, imageRefs } = useImageLoader(info ? [info.img] : []);
 
     return (
         <div className="bgGallery-container">
             {loaded ? (
                 <>
-                    <div className="bgGallery-bgContainer">
-                        {items.map((item, index) => {
-                            return <img loading="lazy" className={animation ? "bgGallery-bgImg-off" : ""} key={index} src={item.img} alt="" />
-                        })}
-                    </div>
-                    <div className="bgGallery-contentContainer">
-                        <div className="bgGallery-contentAndButton">
-                            <div className="bgGallery-content">
-                                {items.map((item, index) => {
-                                    return (
-                                        <div className={`bgGallery-info ${animation ? "bgGallery-info-animation-up bgGallery-transition " : ""}`} key={index}>
-                                            <h2>{item.title}</h2>
-                                            <p>{item.desc}</p>
+                    {info ? (
+                        <>
+                            <div className="bgGallery-bgContainer">
+                                <img loading="lazy" className={animation ? "bgGallery-bgImg-off" : ""} src={info.img} alt="" />
+                            </div>
+                            <div className="bgGallery-contentContainer">
+                                <div className="bgGallery-contentAndButton">
+                                    <div className="bgGallery-content">
+                                        <div className={`bgGallery-info ${animation ? "bgGallery-info-animation-up bgGallery-transition " : ""}`}>
+                                            <h2>{info.title}</h2>
+                                            <p>{info.desc}</p>
                                             <Button className="bgGallery-button-JoinUs" toLink={"/contact"} title="More Information" />
                                         </div>
-                                    )
-                                })}
-                            </div>
-                        </div>
-                        <div className="bgGallery-imgButtonsContainer">
-                            <div className={`${animation ? "bgGallery-imgButton0 bgGallery-transition" : "bgGallery-imgButton1"}`}>
-                                <img loading="lazy" src={items[0].img} alt="" />
-                            </div>
-                            <div className={`${animation ? "bgGallery-imgButton1 bgGallery-transition" : "bgGallery-imgButton2"}`}>
-                                <img loading="lazy" src={items[1].img} alt="" />
-                            </div>
-                            <div className={`${animation ? "bgGallery-imgButton2 bgGallery-transition" : "bgGallery-imgButton3"}`}>
-                                <img loading="lazy" src={items[0].img} alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="bgGallery-phone-bgContainer">
-                        <div className="bgGallery-phone-titleAndButtonsContainer">
-                            <div className="bgGallery-phone-bgImgContainer">
-                                <img loading="lazy" className={animation ? "bgGallery-bgImg-off" : ""} src={items[0].img} alt="" />
-                            </div>
-                            <h2 className={animation ? "bgGallery-bgImg-off" : ""}>{items[0].title}</h2>
-                            <div className="bgGallery-phone-imgButtonsContainer">
-                                <div className={`${animation ? "bgGallery-imgButton0 bgGallery-transition" : "bgGallery-imgButton1"}`}>
-                                    <img loading="lazy" src={items[0].img} alt="" />
-                                </div>
-                                <div className={`${animation ? "bgGallery-imgButton1 bgGallery-transition" : "bgGallery-imgButton2"}`}>
-                                    <img loading="lazy" src={items[1].img} alt="" />
-                                </div>
-                                <div className={`${animation ? "bgGallery-imgButton2 bgGallery-transition" : "bgGallery-imgButton3"}`}>
-                                    <img loading="lazy" src={items[0].img} alt="" />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <p className={animation ? "bgGallery-bgImg-off" : ""}>{items[0].desc}</p>
-                        <div className="bgGallery-button-JoinUsContainer">
-                            <Button toLink={"/contact"} title="" />
-                        </div>
-                    </div>
+                        </>
+                    ) : (
+                        <h2 className="bgGallery-soon">Proximamente</h2>
+                    )}
                 </>
             ) : (
                 <Spinner />

@@ -315,3 +315,11 @@
 
     }
 }
+
+.bgGallery-soon {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    min-height: 800px;
+    color: var(--text-color);
+}

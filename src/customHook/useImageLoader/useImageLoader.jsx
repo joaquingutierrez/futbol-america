@@ -6,7 +6,10 @@ const useImageLoader = (imageUrls) => {
     const imageRefs = useRef([])
 
     useEffect(() => {
-        if (imageUrls.length === 0) return;
+        if (imageUrls.length === 0) {
+            setLoaded(true)
+            return
+        }
 
         let loadedCount = 0;
         setLoaded(false);
