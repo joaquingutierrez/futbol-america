@@ -9,6 +9,52 @@ import shermanImg from "../../assets/testimonies/sherman.jpg"
 import pittman from "../../assets/testimonies/pittman.jpg"
 import { useState } from "react"
 
+
+import image1 from "../../assets/images/grandBrizo/image1.png"
+import image2 from "../../assets/images/grandBrizo/image2.png"
+import image3 from "../../assets/images/grandBrizo/image3.png"
+import image4 from "../../assets/images/grandBrizo/image4.png"
+import image5 from "../../assets/images/grandBrizo/image5.png"
+import image6 from "../../assets/images/grandBrizo/image6.png"
+
+import landPlaza1 from "../../assets/images/landPlaza/image1.png"
+import landPlaza2 from "../../assets/images/landPlaza/image2.png"
+import landPlaza3 from "../../assets/images/landPlaza/image3.png"
+import landPlaza4 from "../../assets/images/landPlaza/image4.png"
+import landPlaza5 from "../../assets/images/landPlaza/image5.png"
+
+import othonPalace1 from "../../assets/images/othonPalace/image1.png"
+import othonPalace2 from "../../assets/images/othonPalace/image2.png"
+import othonPalace3 from "../../assets/images/othonPalace/image3.png"
+import othonPalace4 from "../../assets/images/othonPalace/image4.png"
+import othonPalace5 from "../../assets/images/othonPalace/image5.png"
+import othonPalace6 from "../../assets/images/othonPalace/image6.png"
+
+import southAmerica1 from "../../assets/images/southAmerica/image1.png"
+import southAmerica2 from "../../assets/images/southAmerica/image2.png"
+import southAmerica3 from "../../assets/images/southAmerica/image3.png"
+import southAmerica4 from "../../assets/images/southAmerica/image4.png"
+import southAmerica5 from "../../assets/images/southAmerica/image5.png"
+import southAmerica6 from "../../assets/images/southAmerica/image6.png"
+
+import savoyOthon1 from "../../assets/images/savoyOthon/image1.png"
+import savoyOthon2 from "../../assets/images/savoyOthon/image2.png"
+import savoyOthon3 from "../../assets/images/savoyOthon/image3.png"
+import savoyOthon4 from "../../assets/images/savoyOthon/image4.png"
+import savoyOthon5 from "../../assets/images/savoyOthon/image5.png"
+import savoyOthon6 from "../../assets/images/savoyOthon/image6.png"
+
+import customerIcon from "../../assets/icons/hotelItems/Customer.png"
+import barbellIcon from "../../assets/icons/hotelItems/Barbell.png"
+import bedIcon from "../../assets/icons/hotelItems/Bed.png"
+import restaurantIcon from "../../assets/icons/hotelItems/Restaurant.png"
+import spaFlowerIcon from "../../assets/icons/hotelItems/Spa Flower.png"
+import swimmingIcon from "../../assets/icons/hotelItems/Swimming.png"
+import wiFiIcon from "../../assets/icons/hotelItems/Wi-Fi.png"
+import beachIcon from "../../assets/icons/hotelItems/Beach.png"
+import twoBedsIcon from "../../assets/icons/hotelItems/Two Beds.png"
+import vanImg from "../../assets/images/van.png"
+
 const Services = () => {
 
     const [country, setCountry] = useState("")
@@ -48,15 +94,216 @@ const Services = () => {
         setCountry(choice)
     }
 
+    const hotels = {
+        ARGENTINA: [
+            {
+                title: "HOTEL LAND PLAZA",
+                link: "https://landplazalaplata.com.ar/en/",
+                imgs: [
+                    landPlaza1,
+                    landPlaza2,
+                    landPlaza3,
+                    landPlaza4,
+                    landPlaza5
+                ],
+                items: [
+                    {
+                        img: customerIcon,
+                        item: "2 People"
+                    },
+                    {
+                        img: bedIcon,
+                        item: "Queen bed"
+                    },
+                    {
+                        img: wiFiIcon,
+                        item: "Wifi"
+                    },
+                    {
+                        img: restaurantIcon,
+                        item: "Restaurant"
+                    },
+                    {
+                        img: barbellIcon,
+                        item: "Gym"
+                    },
+                    {
+                        img: swimmingIcon,
+                        item: "Pool"
+                    }
+                ]
+            },
+            {
+                title: "HOTEL GRAND BRIZO",
+                link: "https://www.hotelgrandbrizobuenosaires.com/en/",
+                imgs: [
+                    image1,
+                    image2,
+                    image3,
+                    image4,
+                    image5,
+                    image6
+                ],
+                items: [
+                    {
+                        img: customerIcon,
+                        item: "2 People"
+                    },
+                    {
+                        img: bedIcon,
+                        item: "Queen bed"
+                    },
+                    {
+                        img: wiFiIcon,
+                        item: "Wifi"
+                    },
+                    {
+                        img: restaurantIcon,
+                        item: "Restaurant"
+                    },
+                    {
+                        img: barbellIcon,
+                        item: "Gym"
+                    },
+                    {
+                        img: swimmingIcon,
+                        item: "Pool"
+                    },
+                    {
+                        img: spaFlowerIcon,
+                        item: "Spa & Wellness Center"
+                    }
+                ]
+            }
+        ],
+        BRAZIL: [
+            {
+                title: "HOTEL OTHON PALACE",
+                link: "https://www.othon.com.br/hotel-copacabana/rio-othon-palace",
+                imgs: [
+                    othonPalace1,
+                    othonPalace2,
+                    othonPalace3,
+                    othonPalace4,
+                    othonPalace5,
+                    othonPalace6
+                ],
+                items: [
+                    {
+                        img: customerIcon,
+                        item: "2 People"
+                    },
+                    {
+                        img: bedIcon,
+                        item: "Queen bed"
+                    },
+                    {
+                        img: wiFiIcon,
+                        item: "Wifi"
+                    },
+                    {
+                        img: restaurantIcon,
+                        item: "Restaurant"
+                    },
+                    {
+                        img: barbellIcon,
+                        item: "Gym"
+                    },
+                    {
+                        img: swimmingIcon,
+                        item: "Pool"
+                    },
+                    {
+                        img: beachIcon,
+                        item: "Facing the beach"
+                    }
+                ]
+            },
+            {
+                title: "HOTEL SOUTH AMERICA",
+                link: "https://www.southamericanhotel.com.br/",
+                imgs: [
+                    southAmerica1,
+                    southAmerica2,
+                    southAmerica3,
+                    southAmerica4,
+                    southAmerica5,
+                    southAmerica6
+                ],
+                items: [
+                    {
+                        img: customerIcon,
+                        item: "2 People"
+                    },
+                    {
+                        img: twoBedsIcon,
+                        item: "Individual beds"
+                    },
+                    {
+                        img: wiFiIcon,
+                        item: "Wifi"
+                    },
+                    {
+                        img: restaurantIcon,
+                        item: "Restaurant"
+                    },
+                    {
+                        img: barbellIcon,
+                        item: "Gym"
+                    },
+                    {
+                        img: swimmingIcon,
+                        item: "Pool"
+                    }
+                ]
+            },
+            {
+                title: "HOTEL SAVOY OTHON",
+                link: "https://www.othon.com.br/hotel-copacabana/savoy-othon",
+                link: "",
+                imgs: [
+                    savoyOthon1,
+                    savoyOthon2,
+                    savoyOthon3,
+                    savoyOthon4,
+                    savoyOthon5,
+                    savoyOthon6
+                ],
+                items: [
+                    {
+                        img: customerIcon,
+                        item: "2 People"
+                    },
+                    {
+                        img: bedIcon,
+                        item: "Queen bed"
+                    },
+                    {
+                        img: wiFiIcon,
+                        item: "Wifi"
+                    },
+                    {
+                        img: restaurantIcon,
+                        item: "Restaurant"
+                    },
+                    {
+                        img: barbellIcon,
+                        item: "Gym"
+                    }
+                ]
+            }
+        ]
+    }
+
     return (
         <main>
             {country ? (
                 <>
-                    <BgGallery info={imagesAndInfo[country.toLocaleUpperCase()]} />
+                    <BgGallery info={imagesAndInfo[country.toUpperCase()]} />
                     <AccordionContainer />
                     <AutoGalleryContainer />
                     <InfiniteGallery hasTitle={false} />
-                    <HotelSectionContainer hotel={country} />
+                    <HotelSectionContainer hotels={hotels[country.toUpperCase()]} />
                     <Schedules schedule={country} />
                     <section className="services-testimoniesSection">
                         <h2>Hear their <span>Stories</span></h2>
