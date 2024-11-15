@@ -4,26 +4,12 @@ import Button from "../Button"
 import useImageLoader from "../../customHook/useImageLoader/useImageLoader"
 import Spinner from "../Spinner"
 
-const BgGallery = ({ handleChange, info }) => {
+const BgGallery = ({ country, info }) => {
 
     const [items, setItems] = useState(info)
     const [animation, setAnimation] = useState(false)
 
     const { loaded, error, imageRefs } = useImageLoader(info.map(item => item.img))
-
-    const handleClick = () => {
-        handleChange()
-        setAnimation(true)
-        setTimeout(() => {
-            setItems(prev => {
-                setAnimation(false)
-                const newItems = [...prev]
-                newItems.push(newItems[0])
-                newItems.splice(0, 1)
-                return newItems
-            })
-        }, 200)
-    }
 
     return (
         <div className="bgGallery-container">
@@ -53,10 +39,10 @@ const BgGallery = ({ handleChange, info }) => {
                                 <img loading="lazy" src={items[0].img} alt="" />
                             </div>
                             <div className={`${animation ? "bgGallery-imgButton1 bgGallery-transition" : "bgGallery-imgButton2"}`}>
-                                <img loading="lazy" onClick={handleClick} src={items[1].img} alt="" />
+                                <img loading="lazy" src={items[1].img} alt="" />
                             </div>
                             <div className={`${animation ? "bgGallery-imgButton2 bgGallery-transition" : "bgGallery-imgButton3"}`}>
-                                <img loading="lazy" onClick={handleClick} src={items[0].img} alt="" />
+                                <img loading="lazy" src={items[0].img} alt="" />
                             </div>
                         </div>
                     </div>
@@ -71,10 +57,10 @@ const BgGallery = ({ handleChange, info }) => {
                                     <img loading="lazy" src={items[0].img} alt="" />
                                 </div>
                                 <div className={`${animation ? "bgGallery-imgButton1 bgGallery-transition" : "bgGallery-imgButton2"}`}>
-                                    <img loading="lazy" onClick={handleClick} src={items[1].img} alt="" />
+                                    <img loading="lazy" src={items[1].img} alt="" />
                                 </div>
                                 <div className={`${animation ? "bgGallery-imgButton2 bgGallery-transition" : "bgGallery-imgButton3"}`}>
-                                    <img loading="lazy" onClick={handleClick} src={items[0].img} alt="" />
+                                    <img loading="lazy" src={items[0].img} alt="" />
                                 </div>
                             </div>
                         </div>

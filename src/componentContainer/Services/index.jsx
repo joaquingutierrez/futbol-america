@@ -1,4 +1,4 @@
-import { BgGallery, InfiniteGallery, Schedules, Testimony } from "../../components"
+import { BgGallery, CountryChoice, InfiniteGallery, Schedules, Testimony } from "../../components"
 import "./style.css"
 import argentinaImg from "../../assets/images/bgGallery/argentina.png"
 import brazilImg from "../../assets/images/bgGallery/brazil.png"
@@ -11,7 +11,7 @@ import { useState } from "react"
 
 const Services = () => {
 
-    const [country, setCountry] = useState("Argentina")
+    const [country, setCountry] = useState("")
 
     const imagesAndInfo = [
         {
@@ -44,32 +44,32 @@ const Services = () => {
         job: ""
     }
 
-    const changeCountry = () => {
-        if (country === "Argentina") {
-            setCountry("Brazil")
-        } else if (country === "Brazil") {
-            setCountry("Argentina")
-        } else {
-            setCountry("Brazil")
-        }
+    const changeCountry = (choice) => {
+        setCountry(choice)
     }
 
     return (
         <main>
-            <BgGallery handleChange={changeCountry} info={imagesAndInfo} />
-            <AccordionContainer />
-            <AutoGalleryContainer />
-            <InfiniteGallery hasTitle={false} />
-            <HotelSectionContainer hotel={country} />
-            <Schedules schedule={country} />
-            <section className="services-testimoniesSection">
-                <h2>Hear their <span>Stories</span></h2>
-                <div className="services-testimoniesContainer">
-                    <Testimony content={testimony1} />
-                    <Testimony content={testimony2} />
-                </div>
-            </section>
-            <InfiniteGallery />
+            {country ? (
+                <>
+                    <BgGallery country={country} info={imagesAndInfo} />
+                    <AccordionContainer />
+                    <AutoGalleryContainer />
+                    <InfiniteGallery hasTitle={false} />
+                    <HotelSectionContainer hotel={country} />
+                    <Schedules schedule={country} />
+                    <section className="services-testimoniesSection">
+                        <h2>Hear their <span>Stories</span></h2>
+                        <div className="services-testimoniesContainer">
+                            <Testimony content={testimony1} />
+                            <Testimony content={testimony2} />
+                        </div>
+                    </section>
+                    <InfiniteGallery />
+                </>
+            ) : (
+                <CountryChoice handleChange={changeCountry} />
+            )}
         </main>
     )
 }
