@@ -38,7 +38,7 @@ const AboutFrontPage = () => {
             const timer = setTimeout(() => {
                 setScrollEnabled(true)
                 window.scrollTo(0, 0); // Reset scroll position
-            }, 1000); // Duración de la animación
+            }, 100); // Duración de la animación
             return () => clearTimeout(timer);
         } else {
             document.body.style.overflow = 'auto';
