@@ -302,6 +302,17 @@ const Services = () => {
                     <BgGallery info={imagesAndInfo[country.toUpperCase()]} />
                     <AccordionContainer />
                     <HotelSectionContainer hotels={hotels[country.toUpperCase()]} />
+                    <section className="yourExperienceContainer">
+                        <h2>Your <span>Experience</span></h2>
+                        <ul>
+                            <li>3 or 4 friendly matches</li>
+                            <li>Professional training sessions</li>
+                            <li>Full meal plan</li>
+                            <li>Accommodation</li>
+                            <li>City tour</li>
+                            <li>Professional first division match (according to official schedule)</li>
+                        </ul>
+                    </section>
                     <section className="services-testimoniesSection">
                         <h2>Hear their <span>Stories</span></h2>
                         <div className="services-testimoniesContainer">

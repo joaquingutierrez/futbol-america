@@ -20,6 +20,7 @@ const HotelSectionContainer = ({ hotels }) => {
             </section >
             <section>
                 <div className="hotelSection-vanContainer">
+                    <h2>Our <span>Transfers</span></h2>
                     <div className="hotelSection-van-text">
                         <div className="hotelSection-van-text-ImgContainer-phone">
                             <div className="hotelSection-van-yellowBoc-phone">

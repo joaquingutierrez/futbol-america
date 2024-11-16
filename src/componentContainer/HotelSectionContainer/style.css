@@ -68,6 +68,23 @@
     height: 744px;
     position: relative;
     margin-top: 167px;
+    color: var(--text-color);
+}
+
+.hotelSection-vanContainer h2{
+    font-family: Archivo Black;
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 6rem;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin-bottom: 24px;
+    margin-top: 0;
+    margin-left: 80px;
+}
+
+.hotelSection-vanContainer h2 span {
+    color: var(--second-color);
 }
 
 .hotelSection-van-text {
@@ -89,11 +106,11 @@
 }
 
 .hotelSection-van-yellowBoc {
-    width: 558px;
+    width: 400px;
     aspect-ratio: 1;
     position: absolute;
-    top: 0;
-    right: 427px;
+    top: 10rem;
+    right: 40rem;
     background-color: var(--second-color);
 }
 
@@ -124,16 +141,22 @@
 @media (1200px < width < 1260px) {
     .hotelSection-van-yellowBoc {
         width: 400px;
-        top: 50px;
+        top: 12rem;
+        right: 30rem;
     }
     .hotelSection-van-imgContainer {
         width: 600px;
         right: 80px;
-        bottom: 50px;
+        bottom: 0;
     }
 }
 
 @media ( 799px < width < 1200px) {
+    .hotelSection-vanContainer h2{
+        font-size: 4rem;
+        line-height: 4.1rem;
+    }
+
     .hotelSectionContainer {
         margin-top: 63px;
     }
@@ -160,18 +183,20 @@
     }
     .hotelSection-vanContainer {
         margin-top: 305px;
-        height: 469px;
+        height: 600px;
     }
 
     .hotelSection-van-yellowBoc {
         width: 317px;
         height: 317px;
-        right: 369px;
+        top: 150px;
+        right: 25rem;
     }
 
     .hotelSection-van-imgContainer {
         width: 556px;
         right: 40px;
+        bottom: 0;
     }
 
     .hotelSection-van-text {
@@ -181,43 +206,33 @@
 }
 
 @media (920px < width < 1020px) {
-    .hotelSection-van-imgContainer {
-        width: 450px;
-        right: 40px;
-        bottom: 50px;
-    }
-}
-
-@media (799px < width < 921px) {
     .hotelSection-van-yellowBoc {
-        top: -40px;
+        width: 250px;
+        height: 250px;
+        top: 200px;
+        right: 23rem;
     }
+
     .hotelSection-van-imgContainer {
         width: 450px;
         right: 40px;
-        bottom: 120px;
+        bottom: 0;
     }
 }
 
-@media (width < 800px) {
-    .hotelSectionContainer {
-        margin-top: 63px;
+@media (width < 921px) {
+    .hotelSection-van-yellowBoc {
+        width: 250px;
+        height: 250px;
+        top: 200px;
+        right: 23rem;
     }
 
-    .hotelSectionContainer h2 {
-        font-size: 2.5rem;
-        line-height: 2.6rem;
+    .hotelSection-van-imgContainer {
+        width: 360px;
+        right: 40px;
+        bottom: 0;
     }
-
-    .hotelSectionContainer li {
-        margin-bottom: 17px;
-    }
-
-    .hotelSectionContainer-content {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
     .hotelSection-vanContainer {
         margin-top: 98px;
     }
@@ -269,5 +284,29 @@
     }
     .hotelSection-vanContainer {
         height: auto;
+    }
+}
+
+@media (width < 800px) {
+    .hotelSection-vanContainer h2{
+        font-size: 2.5rem;
+        line-height: 2.6rem;
+    }
+    .hotelSectionContainer {
+        margin-top: 63px;
+    }
+
+    .hotelSectionContainer h2 {
+        font-size: 2.5rem;
+        line-height: 2.6rem;
+    }
+
+    .hotelSectionContainer li {
+        margin-bottom: 17px;
+    }
+
+    .hotelSectionContainer-content {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }

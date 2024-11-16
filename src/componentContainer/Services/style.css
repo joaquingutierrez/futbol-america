@@ -5,7 +5,8 @@
     margin-bottom: 166px;
 }
 
-.services-testimoniesSection h2 {
+.services-testimoniesSection h2,
+.yourExperienceContainer h2 {
     color: var(--text-color);
     font-family: Archivo Black;
     font-size: 6rem;
@@ -16,7 +17,8 @@
     margin-bottom: 80px;
 }
 
-.services-testimoniesSection h2 span {
+.services-testimoniesSection h2 span,
+.yourExperienceContainer h2 span {
     color: var(--second-color);
 }
 
@@ -31,6 +33,25 @@
     gap: 20px;
 }
 
+.yourExperienceContainer {
+    color: var(--text-color);
+    margin: 120px 80px;
+}
+
+.yourExperienceContainer ul {
+    list-style: circle;
+}
+
+.yourExperienceContainer li {
+    font-family: Roboto;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
 @media (799px < width < 1025px) {
     .services-testimoniesSection {
         margin-top: 136px;
@@ -40,9 +61,19 @@
     .services-testimoniesContainer {
         gap: 12px;
     }
-    .services-testimoniesSection h2 {
+    .services-testimoniesSection h2,
+    .yourExperienceContainer h2 {
         font-size: 4rem;
         line-height: 4rem;
+    }
+
+    .yourExperienceContainer {
+        margin: 80px 40px;
+    }
+
+    .yourExperienceContainer li {
+        font-size: 1.65rem;
+        line-height: 2rem;
     }
 }
 
@@ -53,7 +84,8 @@
         margin-top: 60px;
         margin-bottom: 80px;
     }
-    .services-testimoniesSection h2 {
+    .services-testimoniesSection h2,
+    .yourExperienceContainer h2 {
         font-size: 2.5rem;
         line-height: 2.5rem;
         text-align: left;
@@ -80,5 +112,14 @@
         width: 100%;
         background-color: var(--main-color);
         border-radius: 6px;
+    }
+
+    .yourExperienceContainer {
+        margin: 80px 16px;
+    }
+
+    .yourExperienceContainer li {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
     }
 }
