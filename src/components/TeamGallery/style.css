@@ -10,11 +10,7 @@
     gap: 120px;
 }
 
-.teamGallery-cardContainer {
-    width: 90%;
-    margin: auto;
-    position: relative;
-}
+
 .teamGallery-topSeparator {
     top: -60px;
     bottom: auto;
@@ -29,26 +25,34 @@
     border-radius: 100%;
 }
 
+.teamGallery-cardContainer {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
 .teamGallery-leftCardContainer {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 2fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "image name"
         "image desc"
         "image mail"
     ;
+    gap: 16px;
 }
 
 .teamGallery-rightCardContainer {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 2fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "name image"
         "desc image"
         "mail image"
     ;
+    gap: 16px;
 }
 
 .teamGallery-leftCardContainer h3,
@@ -62,7 +66,6 @@
 .teamGallery-leftCardContainer p,
 .teamGallery-rightCardContainer p {
     grid-area: desc;
-    margin: auto 80px;
 }
 
 .teamGallery-leftCardContainer .teamGallery-mailContainer,
@@ -81,12 +84,13 @@
 .teamGallery-imgContainer {
     grid-area: image;
     height: 100%;
+    max-height: 380px;
     aspect-ratio: 0.8;
-    overflow: hidden;
-    border-radius: 10px;
+    margin: auto;
 }
 
 .teamGallery-imgContainer img {
+    border-radius: 10px;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -116,7 +120,6 @@
     letter-spacing: -0.02em;
     text-align: left;
     color: var(--second-color);
-    overflow: hidden;
     margin: 0;
     margin-bottom: 42px;
 }
@@ -129,7 +132,6 @@
     line-height: 1.25rem;
     letter-spacing: -0.02em;
     text-align: left;
-    overflow: hidden;
     margin: 0;
 }
 
@@ -173,7 +175,7 @@
     }
 }
 
-@media (799px < width < 1025px) {
+@media (799px < width < 1200px) {
     .teamGallery-container {
         margin-top: 218px;
         margin-left: 40px;
@@ -183,23 +185,15 @@
         align-items: center;
     }
 
-    .teamGallery-imageContainer {
-        overflow: hidden;
-        width: 58%;
-        height: 65vh;
-    }
-
     .teamGallery-name {
-        font-size: 1rem;
-        line-height: 1rem;
-        margin-bottom: 40px;
-        margin-top: 176px;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
     }
 
-    .teamGallery-desc {
-        font-size: 1rem;
-        line-height: 1rem;
-        height: 17rem;
+    .teamGallery-desc,
+    .teamGallery-mailContainer a {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
     }
 }
 
@@ -208,26 +202,27 @@
         margin-top: 300px;
         margin-left: 16px;
         margin-right: 16px;
-        flex-direction: column;
     }
-    .teamGallery-imageContainer {
-        width: 100%;
-        height: 450px;
-        margin-bottom: 20px;
-    }
-    .teamGallery-content {
+
+    .teamGallery-leftCardContainer,
+    .teamGallery-rightCardContainer {
         display: flex;
-        width: 100%;
-        flex-direction: column-reverse;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
+    .teamGallery-imgContainer {
+        max-height: 310px;
+    }
+
     .teamGallery-name {
-        font-size: 1rem;
-        line-height: 1rem;
-        margin-bottom: 24px;
-        margin-top: 66px;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
     }
-    
-    .teamGallery-desc {
+
+    .teamGallery-desc,
+    .teamGallery-mailContainer a {
         font-size: 1rem;
         line-height: 1rem;
     }
