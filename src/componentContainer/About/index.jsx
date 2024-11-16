@@ -55,6 +55,11 @@ From Racing Club de Avellaneda (Argentina) to the first European leagues (France
 Juan is also the creator of Total Futbol Camp, a soccer program for boys and girls that combine fun and development to grow in the skills and the passion for the game.
 `,
             contactMail: ""
+        },
+        {
+            img: unknownImg,
+            name: "Emanuel Olivera",
+            desc: "Say Hello to Coach Emmanuel Olivera. He has been playing soccer since he was 5 years old, he went through all the academy divisions until he obtained his professional contract in 2015 (Argentine first division) at Club Gimnasia y Esgrima de la Plata as well as playing in the second and third divisions while he was finishing his Law degree before moving to the US in 2019.Since moving to Kentucky coach “E”, Argentina“A” License  (ATFA -CONMEBOL US Soccer approved) has opened his own technical training business, Coach Emmanuel Soccer and has trained over 500 players ( boys and girls) and worked as head coach  at Central Kentucky Storm, Georgetown Football Club (KPL/KSSL). He offers training all year around, including summer and winter camps. Most recently,  he was a part of the IMG Academy Summer Soccer Camp. His goal is to share his knowledge and love for the sport to create a positive impact on the players, and see results on and off the field."
         }
     ]
 
