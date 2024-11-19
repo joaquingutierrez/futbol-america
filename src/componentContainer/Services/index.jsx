@@ -295,38 +295,55 @@ const Services = () => {
         ]
     }
 
+    const handleClick = () => {
+        setCountry("")
+    }
+
     return (
         <main>
+
             {country ? (
                 <>
-                    <BgGallery info={imagesAndInfo[country.toUpperCase()]} />
-                    <AccordionContainer />
-                    <HotelSectionContainer hotels={hotels[country.toUpperCase()]} />
-                    <section className="yourExperienceContainer">
-                        <h2>Your <span>Experience</span></h2>
-                        <ul>
-                            <li>3 or 4 friendly matches</li>
-                            <li>Professional training sessions</li>
-                            <li>Full meal plan</li>
-                            <li>Accommodation</li>
-                            <li>City tour</li>
-                            <li>Professional first division match (according to official schedule)</li>
-                        </ul>
-                    </section>
-                    <section className="services-testimoniesSection">
-                        <h2>Hear their <span>Stories</span></h2>
-                        <div className="services-testimoniesContainer">
-                            <Testimony content={testimony1} />
-                            <Testimony content={testimony2} />
-                        </div>
-                    </section>
-                    <AutoGalleryContainer />
-                    <InfiniteGallery />
+            <button onClick={handleClick}>Countries Selection</button>
+                {
+                  imagesAndInfo[country.toUpperCase()] ? (
+
+                    <>
+                        <BgGallery info={imagesAndInfo[country.toUpperCase()]} />
+                        <AccordionContainer />
+                        <HotelSectionContainer hotels={hotels[country.toUpperCase()]} />
+                        <section className="yourExperienceContainer">
+                            <h2>Your <span>Experience</span></h2>
+                            <ul>
+                                <li>3 or 4 friendly matches</li>
+                                <li>Professional training sessions</li>
+                                <li>Full meal plan</li>
+                                <li>Accommodation</li>
+                                <li>City tour</li>
+                                <li>Professional first division match (according to official schedule)</li>
+                            </ul>
+                        </section>
+                        <section className="services-testimoniesSection">
+                            <h2>Hear their <span>Stories</span></h2>
+                            <div className="services-testimoniesContainer">
+                                <Testimony content={testimony1} />
+                                <Testimony content={testimony2} />
+                            </div>
+                        </section>
+                        <AutoGalleryContainer />
+                        <InfiniteGallery />
+                    </>
+                ) : (
+                    <h2 style={{height:"80vh", display: 'flex', justifyContent: 'center', alignItems: 'center', color: '#fff', fontSize: '4rem'}}>Soon...</h2>
+                )  
+                }
                 </>
+                
+
             ) : (
                 <CountryChoice handleChange={changeCountry} />
             )}
-        </main>
+        </main >
     )
 }
 

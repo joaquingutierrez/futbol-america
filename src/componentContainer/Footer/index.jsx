@@ -41,7 +41,7 @@ const Footer = () => {
                 <div className="footer-smIcons">
                     {/* <img src={linkedin} alt="LinkedIn" />
                     <img src={twitterX} alt="Twitter - X" /> */}
-                    <a href="https://www.instagram.com/futbol_america_tours?igsh=bmJ3MGc1MTdtNms=" target="_blank" rel="noopener noreferrer"><img loading="lazy" src={instagram} alt="Instagram" /></a>
+                    <a href="https://www.instagram.com/futbolamericatours?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"><img loading="lazy" src={instagram} alt="Instagram" /></a>
                     {/* {<img src={facebook} alt="Facebook" />} */}
                 </div>
             </div>
