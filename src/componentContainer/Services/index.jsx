@@ -1,4 +1,4 @@
-import { BgGallery, CountryChoice, InfiniteGallery, Schedules, Testimony } from "../../components"
+import { BgGallery, CountryChoice, InfiniteGallery, Testimony } from "../../components"
 import "./style.css"
 import argentinaImg from "../../assets/images/bgGallery/argentina.png"
 import brazilImg from "../../assets/images/bgGallery/brazil.png"
@@ -53,7 +53,7 @@ import swimmingIcon from "../../assets/icons/hotelItems/Swimming.png"
 import wiFiIcon from "../../assets/icons/hotelItems/Wi-Fi.png"
 import beachIcon from "../../assets/icons/hotelItems/Beach.png"
 import twoBedsIcon from "../../assets/icons/hotelItems/Two Beds.png"
-import vanImg from "../../assets/images/van.png"
+import Button from "../../components/Button"
 
 const Services = () => {
 
@@ -304,9 +304,11 @@ const Services = () => {
 
             {country ? (
                 <>
-            <button onClick={handleClick}>Countries Selection</button>
+                <div className="countrySelectionButtonContainer">
+                    <Button title="Countries Selection" handleClick={handleClick}/>
+                </div>
                 {
-                  imagesAndInfo[country.toUpperCase()] ? (
+                    imagesAndInfo[country.toUpperCase()] ? (
 
                     <>
                         <BgGallery info={imagesAndInfo[country.toUpperCase()]} />

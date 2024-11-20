@@ -1,7 +1,7 @@
 import { HotelLayout } from "../../components"
 import "./style.css"
 import stadium from "../../assets/images/stadium.png"
-import vanImg from "../../assets/images/van.png"
+import vanImg from "../../assets/images/van.jpg"
 
 const HotelSectionContainer = ({ hotels }) => {
 

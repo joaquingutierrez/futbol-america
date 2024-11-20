@@ -52,15 +52,29 @@
     margin-bottom: 16px;
 }
 
+
+.countrySelectionButtonContainer {
+    position: absolute;
+    z-index: 5;
+    top: 100px;
+    right: 80px;
+}
+
+.countrySelectionButtonContainer button {
+    width: fit-content;
+}
+
 @media (799px < width < 1025px) {
     .services-testimoniesSection {
         margin-top: 136px;
         margin-left: 40px;
         margin-right: 40px;
     }
+
     .services-testimoniesContainer {
         gap: 12px;
     }
+
     .services-testimoniesSection h2,
     .yourExperienceContainer h2 {
         font-size: 4rem;
@@ -75,15 +89,20 @@
         font-size: 1.65rem;
         line-height: 2rem;
     }
+
+    .countrySelectionButtonContainer {
+        top: 25px;
+    }
 }
 
 @media (width < 800px) {
-    .services-testimoniesSection{
+    .services-testimoniesSection {
         margin-left: 16px;
         margin-right: 16px;
         margin-top: 60px;
         margin-bottom: 80px;
     }
+
     .services-testimoniesSection h2,
     .yourExperienceContainer h2 {
         font-size: 2.5rem;
@@ -92,6 +111,7 @@
         width: 18rem;
         margin-bottom: 40px;
     }
+
     .services-testimoniesContainer {
         width: 100%;
         flex-wrap: nowrap;
@@ -99,15 +119,16 @@
         justify-content: flex-start;
         padding-bottom: 10px;
     }
+
     .services-testimoniesContainer::-webkit-scrollbar {
         height: 6px;
     }
-    
+
     .services-testimoniesContainer::-webkit-scrollbar-thumb {
         background-color: var(--second-color);
         border-radius: 6px;
     }
-    
+
     .services-testimoniesContainer::-webkit-scrollbar-track {
         width: 100%;
         background-color: var(--main-color);
@@ -121,5 +142,10 @@
     .yourExperienceContainer li {
         font-size: 1.2rem;
         line-height: 1.4rem;
+    }
+
+    .countrySelectionButtonContainer {
+        top: 25px;
+        right: 50px;
     }
 }
