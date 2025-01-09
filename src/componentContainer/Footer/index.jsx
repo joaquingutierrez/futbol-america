@@ -33,7 +33,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-content">
                 <div className="footer-contactInfo">
-                    <p>info@futbolamericatours.com</p>
+                    <p>infofutbolamerica@gmail.com</p>
                     <p>513 325 7423</p>
                     <p>+54 9 223 5965 940</p>
                 </div>

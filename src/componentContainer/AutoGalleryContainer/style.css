@@ -2,7 +2,7 @@
     width: auto;
     margin: 74px 80px;
     height: 80vh;
-    min-height: 900px;
+    min-height: 800px;
 }
 
 @media (799px < width < 1025px) {

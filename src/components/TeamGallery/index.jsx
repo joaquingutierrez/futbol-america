@@ -1,4 +1,5 @@
 import "./style.css"
+import whatsappLogo from "../../assets/icons/whatsapp.png"
 
 const TeamGallery = ({ team }) => {
 
@@ -14,7 +15,7 @@ const TeamGallery = ({ team }) => {
                         <h3 className={`teamGallery-name`}>{item.name}</h3>
                         <p className={`teamGallery-desc`}>{item.desc}</p>
                         <div className={`teamGallery-mailContainer`}>
-                            {item.contactMail && <a href={`mailto: ${item.contactMail}`}>{item.contactMail}</a>}
+                            {item.phone && <a href={`https://wa.me/${item.phone}`} target="_blank"><img src={whatsappLogo} alt="whatsapp" /></a>}
                         </div>
                         <div className="teamGallery-separator"></div>
                     </div>
