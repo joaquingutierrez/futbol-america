@@ -5,9 +5,10 @@ import guzonImg from "../../assets/team/guzon.jpg"
 import neveleffImg from "../../assets/team/neveleff.jpg"
 import unknownImg from "../../assets/team/unknown.png"
 import sabinImg from "../../assets/team/sabin.jpg"
-import sousaImg from "../../assets/team/willer.jpg"
+import sousaImg from "../../assets/team/sousa.jpg"
 import oliveraImg from "../../assets/team/olivera.jpg"
 import barrientosImg from "../../assets/team/barrientos.jpg"
+import caroImg from "../../assets/team/caro.jpg"
 
 
 const About = () => {
@@ -55,7 +56,7 @@ Juan is also the creator of Total Futbol Camp, a soccer program for boys and gir
             desc: "Say Hello to Coach Emmanuel Olivera. He has been playing soccer since he was 5 years old, he went through all the academy divisions until he obtained his professional contract in 2015 (Argentine first division) at Club Gimnasia y Esgrima de la Plata as well as playing in the second and third divisions while he was finishing his Law degree before moving to the US in 2019.Since moving to Kentucky coach “E”, Argentina“A” License  (ATFA -CONMEBOL US Soccer approved) has opened his own technical training business, Coach Emmanuel Soccer and has trained over 500 players ( boys and girls) and worked as head coach  at Central Kentucky Storm, Georgetown Football Club (KPL/KSSL). He offers training all year around, including summer and winter camps. Most recently,  he was a part of the IMG Academy Summer Soccer Camp. His goal is to share his knowledge and love for the sport to create a positive impact on the players, and see results on and off the field."
         },
         {
-            img: unknownImg,
+            img: caroImg,
             name: "Diana Caro",
             desc: 'She is Diana Caro For more than 10 years, she has accompanied the soccer sports process in the different categories in which one of her children has participated. As a mother, she is aware of the dreams of young people. For this reason, she has decided a year ago to accompany Soccer Tours in Fútbol América. from Colombia.She is currently a Lawyer, Specialist in Procedural Law, Sports Coaching, with a diploma in Fundamentals of Management for Sports Organizations, she also stands out for promoting the organization of events and their logistics, through the Soccer Go foundation “Travel for a dream”, the whose mission is to transform the quality of life of children, adolescents and young people in Colombia through the promotion of sports through trips, excursions, events and recreation. Ensuring that they live unforgettable experiences through national and international travel, which allows them to learn about other cultures, where they carry out sports exchanges or compete in high-level tournaments, and also grow personally and professionally, strengthening their sporting talent and promoting their comprehensive development. ”.'
         }

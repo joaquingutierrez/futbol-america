@@ -15,7 +15,15 @@ const TeamGallery = ({ team }) => {
                         <h3 className={`teamGallery-name`}>{item.name}</h3>
                         <p className={`teamGallery-desc`}>{item.desc}</p>
                         <div className={`teamGallery-mailContainer`}>
-                            {item.phone && <a href={`https://wa.me/${item.phone}`} target="_blank"><img src={whatsappLogo} alt="whatsapp" /></a>}
+                            {item.phone &&
+                                <a
+                                    href={`https://wa.me/${item.phone}?text=${encodeURIComponent("Hello, I was watching Futbol America Tours website and I would like to receive more information about...")}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <img src={whatsappLogo} alt="whatsapp" />
+                                </a>
+                            }
                         </div>
                         <div className="teamGallery-separator"></div>
                     </div>

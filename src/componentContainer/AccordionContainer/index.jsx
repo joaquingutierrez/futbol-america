@@ -1,15 +1,16 @@
 import { Accordion } from "../../components"
-import collegePathImg from "../../assets/images/accordion/College Path.png"
-import careerMentorshipImg from "../../assets/images/accordion/Career Mentorship.png"
-import internationalTournamentsImg from "../../assets/images/accordion/International Tournaments.png"
-import professionalToursImg from "../../assets/images/accordion/Professional Tours.png"
+
+import collegePathImg from "../../assets/images/accordion/COLLEGE PATH.jpg"
+import careerMentorshipImg from "../../assets/images/accordion/CARRER MENTORSHIP.jpg"
+import internationalTournamentsImg from "../../assets/images/accordion/TORNEOS INTERNACIONALES.jpg"
+import professionalToursImg from "../../assets/images/accordion/PROFESIONAL TOURS Y PRE SESION.jpg"
 import reduceImg from "../../assets/images/accordion/Reduce.png"
-import residentialProgramsImg from "../../assets/images/accordion/Residential Programs.png"
-import coachesImg from "../../assets/images/accordion/Coaches.png"
-import teamToursImg from "../../assets/images/accordion/TEAM TOURS.png"
-import fansToursImg from "../../assets/images/accordion/FANS TOURS.png"
-import futbolSeniorImg from "../../assets/images/accordion/FUTBOL SENIOR.png"
-import sportsScholarshipImg from "../../assets/images/accordion/SPORTS SCHOLARSHIP.png"
+import residentialProgramsImg from "../../assets/images/accordion/RESIDENTIAL PROGRAM.jpg"
+import coachesImg from "../../assets/images/accordion/COACH_CLINICSjpg.jpg"
+import teamToursImg from "../../assets/images/accordion/TEAMS TOUR.jpg"
+import fansToursImg from "../../assets/images/accordion/FANS TOUR.jpg"
+import futbolSeniorImg from "../../assets/images/accordion/FUTBOL SENIOR.jpg"
+import sportsScholarshipImg from "../../assets/images/accordion/SPORT SCHOLARSHIP.jpg"
 
 
 const AccordionContainer = () => {
