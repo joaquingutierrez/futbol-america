@@ -8,6 +8,14 @@
     margin-bottom: 80px;
 }
 
+.countrySelectionContainer-spinner {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .countrySelectionContainer div {
     margin: auto;
     width: 100%;
